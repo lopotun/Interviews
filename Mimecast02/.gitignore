@@ -3,3 +3,5 @@
 /.gradle/
 /gradle/
 /.idea
+#Do not commit NYT_API_KEY
+/src/main/resources/key.properties
