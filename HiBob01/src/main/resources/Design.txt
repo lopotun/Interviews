@@ -1,0 +1,25 @@
+Survey
+    Date start
+    Date stop
+    Users[] users
+    String title
+    ChoiceQuestionsGroup[]   cqg
+        Long refSurvey
+        String question
+        Integer maxChoices
+        ChoiceOption[]   cq
+            Long refChoiceQuestionsGroup
+            String option
+            Boolean isChecked
+        String[] getCheckedOptions()
+
+    OpenQuestion[]     oq
+    NewQuestionType[]     no
+        Long refSurvey
+        QuestionType -- scale, ruller, slider
+        String question "Are you happy? from 1 to 10"
+        Integer answer
+
+SurveyUser
+
+User
